@@ -1,7 +1,7 @@
 local api = require("api")
 
 local imminent_jail_addon = {
-	name = "Deflecto",
+	name = "Imminent Jail",
 	author = "Michaelqt",
 	version = "1.0",
 	desc = "Alerts you when at 39 or more crime points."
