@@ -32,7 +32,10 @@ local function OnUpdate(dt)
         if aboveCrimePointThreshold then 
             imminentJailWindow.bigText:SetText("IMMINENT JAIL: " .. tostring(crimePoints) .. "/50")
             imminentJailWindow:Show(true)
+        else 
+            imminentJailWindow:Show(false)
         end 
+        
         clockTimer = 0	
     end    
 end 
