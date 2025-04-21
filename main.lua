@@ -28,11 +28,15 @@ local function OnUpdate(dt)
         if infamyPoints >= 2950 and infamyPoints < 3000 then 
             imminentJailWindow.biggerText:SetText("IMMINENT PIRATE: " .. tostring(infamyPoints) .. "/3000")
             imminentJailWindow:Show(true)
-        end
+        else 
+            imminentJailWindow.biggerText:SetText("")
+            imminentJailWindow:Show(false)
+        end 
         if aboveCrimePointThreshold then 
             imminentJailWindow.bigText:SetText("IMMINENT JAIL: " .. tostring(crimePoints) .. "/50")
             imminentJailWindow:Show(true)
         else 
+            imminentJailWindow.bigText:SetText("")
             imminentJailWindow:Show(false)
         end 
         
